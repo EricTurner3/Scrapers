@@ -1,64 +1,21 @@
-# Police Data Accessibility Project Scrapers
-This repo contains the record scrapers (and associated tooling) to further the goals of the Police Data Accessibility Project. Thank you for your interest in contributing!
+# Police Data Accessibility Project Scrapers & ETL
+This repo contains the record scrapers, ETL and associated tooling to further the goals of the [Police Data Accessibility Project](https://pdap.io). Thank you for your interest in contributing!
 
-# Getting Started
-## Quick start
-1. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repo.
-2. Make a copy of the template folder in the appropriate jurisdiction folder. Read more about structure below.
-3. Code your scraper.
-4. Scrape sample data from the source and add a truncated version to the folder so we understand the kind of data your scraper generates.
-5. Complete the readme to the best of your ability.
-6. If you know how to use Splunk, complete the config file.
-7. Submit a Pull Request for approval.
+# Where can I find data?
+Uploaded data is [here](https://www.dolthub.com/repositories/pdap/data-intake). Soon, we'll mirror it for archival storage and the performance we will need at scale.
 
-## Structure
-Stick to the format of `USA/$STATE/$COUNTY/$RECORD_TYPE`. If there are state-level records being scraped, use `USA/$STATE/_State/$RECORD_TYPE`. Use underscores rather than spaces or dashes.
+# How can I contribute?
+To submit data, use [Dolt](https://docs.pdap.io/data-storage/dolthub). 
+To contribute a scraper, start with [CONTRIBUTING.md](https://github.com/Police-Data-Accessibility-Project/Scrapers/blob/master/CONTRIBUTING.md).
 
-## Legal
-Only scrapers that comply with our [legal guidelines](https://docs.google.com/document/d/1gjnH0S18iBI20K1pfs4M3wuMqcLE_ZSgt71ITUY2Fbk/edit) will be merged into this repo.
+## Dataset research
+If you have a computer, you can help us populate our [datasets](https://www.dolthub.com/repositories/pdap/datasets) table with better info.
 
-## General Guidelines
-Python is preferred. If you use another language, please document your work.
+## Police data collection
+If you have a computer, you can help us populate our public-access [data intake](https://www.dolthub.com/repositories/pdap/data-intake) with public police data.
 
-Your scraper must comply with our [legal guidelines](https://docs.google.com/document/d/1gjnH0S18iBI20K1pfs4M3wuMqcLE_ZSgt71ITUY2Fbk/edit).
+## Fund us directly
+We're pending 501c3 non-profit status. You can give us money with PayPal [on our website](http://pdap.io/).
 
-Everyone working on this project is using their free time. Please expect some back-and-forth communication when speaking to the individuals reviewing your PR's and be patient and respectful with us. The more work you do to test and validate that your scraper has met the contribution guidelines, the quicker we can accept it.
-
-## Getting Help
-The [#scrapers_general](https://policeaccessibility.slack.com/archives/C013XH00WHZ) slack channel is the place to start.
-
-### Known datasets
-This [dataset catalogue](https://docs.google.com/spreadsheets/d/1A0iTx7N-qVH2fms3Gmaf8RbnTpJPjgSoLPEa1o-J6J8/edit#gid=0&fvid=1660736644) is how we track potential sources.
-
-### Fields to scrape
-**Note:** the naming convention for these fields may not be consistent across data sources. If any fields are not retrievable please fill it with "NA". 
-* _id
-* _state
-* _county
-* CaseNum
-* FirstName
-* MiddleName
-* LastName
-* Suffix
-* DOB
-* Race
-* Sex
-* ArrestDate
-* FilingDate
-* OffenseDate
-* DivisionName
-* CaseStatus
-* DefenseAttorney
-* PublicDefender
-* Judge
-* ChargeCount
-* ChargeStatute
-* ChargeDescription
-* ChargeDisposition
-* ChargeDispositionDate
-* ChargeOffenseDate
-* ChargeCitationNum
-* ChargePlea
-* ChargePleaDate
-* ArrestingOfficer
-* ArrestingOfficerBadgeNumber
+# Documentation
+Our docs are centralized [here](http://docs.pdap.io/).
